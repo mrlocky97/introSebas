@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="595.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Aplicacion.Controlador">
+   <children>
+      <AnchorPane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="186.0" layoutY="110.0" prefHeight="47.0" prefWidth="209.0" text="Titulo 1" textFill="WHITE">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="186.0" layoutY="180.0" prefHeight="118.0" prefWidth="209.0" text="este es un cuadro de texto, donde se puedes escribir parrafos largos." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="178.0" layoutY="314.0" prefHeight="157.0" prefWidth="209.0" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="46.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@heart-care.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="186.0" layoutY="110.0" prefHeight="47.0" prefWidth="209.0" text="Titulo 2">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="186.0" layoutY="180.0" prefHeight="118.0" prefWidth="209.0" text="este es un cuadro de texto, donde se puedes escribir parrafos largos." textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="178.0" layoutY="314.0" prefHeight="157.0" prefWidth="209.0" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="46.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@piggy-bank.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="186.0" layoutY="110.0" prefHeight="47.0" prefWidth="209.0" text="Titulo 3" textFill="WHITE">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="186.0" layoutY="180.0" prefHeight="118.0" prefWidth="209.0" text="este es un cuadro de texto, donde se puedes escribir parrafos largos." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="178.0" layoutY="314.0" prefHeight="157.0" prefWidth="209.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="46.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@coding.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton onAction="#backAction" prefHeight="48.0" prefWidth="50.0" style="-fx-background-color: #00000020; -fx-background-radius: 50px;" text="&lt;" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="472.0" AnchorPane.topAnchor="508.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="467.0" onAction="#nextAction" prefHeight="48.0" prefWidth="51.0" style="-fx-background-color: #00000020; -fx-background-radius: 50px;" text="&gt;" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="467.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="508.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="countLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="345.0" text="1/3" textFill="WHITE" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="104.0" AnchorPane.rightAnchor="107.0" AnchorPane.topAnchor="525.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
